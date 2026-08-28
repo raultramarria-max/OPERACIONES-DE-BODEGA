@@ -8,6 +8,8 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <link rel="apple-touch-icon" href="icon-192.png">
+<link rel="icon" href="icon-192.png">
+<link rel="manifest" href="manifest.json">
 <title>Regularización sin OC · Quinta</title>
 <style>
 :root{
@@ -876,8 +878,8 @@ function tarjasPDF(tarjas, nombre){
          kv/'regseq'    ESTA app: correlativo de folios RG#####
      · localStorage 'quinta_pallets' → bandeja de Bodega Móvil
    ================================================================ */
-const BUILD_ID = '20260826-reg';
-const APP_VER  = '1.0';
+const BUILD_ID = '20260828-reg';
+const APP_VER  = '1.1';
 
 /* ---------------- utilidades ---------------- */
 const $  = id => document.getElementById(id);
@@ -927,22 +929,36 @@ function fmtMP(n){ return MP_PREFIJO+String(n).padStart(MP_DIGITOS,'0'); }
 function esMP(s){ return /^MP\d{6}$/.test(String(s||'')); }
 function mpNum(s){ return esMP(s)? parseInt(String(s).slice(2),10) : 0; }
 
+/* ---- espejo de los correlativos en localStorage ----------------
+   REGLA PERMANENTE: el correlativo NUNCA vuelve a empezar.
+   El número vive en IndexedDB, pero además se copia acá. Si la base
+   se pierde (borrar datos del navegador, reinstalar, teléfono nuevo)
+   el espejo lo levanta de vuelta. Estas funciones SOLO suben.       */
+const MPSEQ_LS='quinta_mpseq', REGSEQ_LS='quinta_regseq';
+function lsSeq(k){ try{ const n=parseInt(localStorage.getItem(k)||'0',10); return (isFinite(n)&&n>0)? n : 0; }catch(e){ return 0; } }
+function lsSeqSubir(k,n){ try{ if(isFinite(n) && n>lsSeq(k)) localStorage.setItem(k,String(n)); }catch(e){} }
+
 function reservarMP(n){
   const cant = Math.max(0, parseInt(n||0,10));
   if(!cant) return Promise.resolve([]);
+  const piso = lsSeq(MPSEQ_LS);                 /* nunca por debajo del espejo */
   return db().then(d=>new Promise((res,rej)=>{
     const tx=d.transaction('kv','readwrite'), st=tx.objectStore('kv'), g=st.get('mpseq');
-    let out=[];
+    let out=[], tope=0;
     g.onsuccess=()=>{
       let cur=parseInt(g.result||0,10); if(!isFinite(cur)||cur<0) cur=0;
+      if(piso>cur) cur=piso;
       if(cur+cant>MP_MAX){ rej(new Error('correlativo agotado')); try{tx.abort();}catch(e){} return; }
       for(let i=cur+1;i<=cur+cant;i++) out.push(fmtMP(i));
-      st.put(cur+cant,'mpseq');
+      tope=cur+cant; st.put(tope,'mpseq');
     };
-    g.onerror=e=>rej(e); tx.oncomplete=()=>res(out); tx.onerror=e=>rej(e); tx.onabort=e=>rej(e);
+    g.onerror=e=>rej(e);
+    tx.oncomplete=()=>{ lsSeqSubir(MPSEQ_LS,tope); res(out); };
+    tx.onerror=e=>rej(e); tx.onabort=e=>rej(e);
   }));
 }
-/* El contador se adelanta al mayor MP existente en recepciones Y regularizaciones */
+/* El contador se adelanta al mayor MP existente en recepciones,
+   regularizaciones, bandeja de pallets y espejo de localStorage */
 function sincronizarMP(){
   return idbAll('rec').then(recs=>{
     let max=0;
@@ -951,10 +967,27 @@ function sincronizarMP(){
         (l&&Array.isArray(l.cont)?l.cont:[]).forEach(c=>{ const v=mpNum(c); if(v>max) max=v; }); }); });
     (REGS||[]).forEach(g=>(g.lineas||[]).forEach(l=>{
       (Array.isArray(l.cont)?l.cont:[]).forEach(c=>{ const v=mpNum(c); if(v>max) max=v; }); }));
+    try{ palletsLeer().forEach(p=>{ const v=mpNum(p&&p.cont); if(v>max) max=v; }); }catch(e){}
+    try{ const u=ubicMap(); for(const k in u){ const v=mpNum(k); if(v>max) max=v; } }catch(e){}
+    const esp=lsSeq(MPSEQ_LS); if(esp>max) max=esp;
     return idbGet('kv','mpseq').then(seq=>{
       const cur=parseInt(seq||0,10)||0;
-      return (max>cur)? idbSet('kv','mpseq',max) : true;
+      const fin=Math.max(cur,max);
+      lsSeqSubir(MPSEQ_LS,fin);
+      return (fin>cur)? idbSet('kv','mpseq',fin) : true;
     });
+  }).catch(()=>true);
+}
+/* Lo mismo para el folio RG: se adelanta al mayor folio guardado y al espejo */
+function sincronizarRG(){
+  let max=0;
+  (REGS||[]).forEach(r=>{ const v=rgNum(r.id); if(v>max) max=v; });
+  const esp=lsSeq(REGSEQ_LS); if(esp>max) max=esp;
+  return idbGet('kv','regseq').then(seq=>{
+    const cur=parseInt(seq||0,10)||0;
+    const fin=Math.max(cur,max);
+    lsSeqSubir(REGSEQ_LS,fin);
+    return (fin>cur)? idbSet('kv','regseq',fin) : true;
   }).catch(()=>true);
 }
 
@@ -963,15 +996,19 @@ const RG_DIGITOS=5;
 function fmtRG(n){ return 'RG'+String(n).padStart(RG_DIGITOS,'0'); }
 function rgNum(s){ return /^RG\d+$/.test(String(s||''))? parseInt(String(s).slice(2),10) : 0; }
 function reservarFolio(){
+  const piso = lsSeq(REGSEQ_LS);                /* nunca por debajo del espejo */
   return db().then(d=>new Promise((res,rej)=>{
     const tx=d.transaction('kv','readwrite'), st=tx.objectStore('kv'), g=st.get('regseq');
-    let folio='';
+    let folio='', nuevo=0;
     g.onsuccess=()=>{
       let cur=parseInt(g.result||0,10); if(!isFinite(cur)||cur<0) cur=0;
       let max=cur; (REGS||[]).forEach(r=>{ const v=rgNum(r.id); if(v>max) max=v; });
-      folio=fmtRG(max+1); st.put(max+1,'regseq');
+      if(piso>max) max=piso;
+      nuevo=max+1; folio=fmtRG(nuevo); st.put(nuevo,'regseq');
     };
-    g.onerror=e=>rej(e); tx.oncomplete=()=>res(folio); tx.onerror=e=>rej(e); tx.onabort=e=>rej(e);
+    g.onerror=e=>rej(e);
+    tx.oncomplete=()=>{ lsSeqSubir(REGSEQ_LS,nuevo); res(folio); };
+    tx.onerror=e=>rej(e); tx.onabort=e=>rej(e);
   }));
 }
 
@@ -1725,20 +1762,57 @@ function fallbackMail(asunto,cuerpo,file){
 function openData(){
   const nPal=palletsLeer().length;
   let nProd=0; REGS.forEach(r=>nProd+=(r.lineas||[]).length);
-  idbGet('kv','mpseq').then(seq=>{
+  Promise.all([idbGet('kv','mpseq'), idbGet('kv','regseq')]).then(v=>{
+    const mp=Math.max(parseInt(v[0]||0,10)||0, lsSeq(MPSEQ_LS));
+    const rg=Math.max(parseInt(v[1]||0,10)||0, lsSeq(REGSEQ_LS));
     modal('<h3>Datos</h3>'+
       '<div class="meta" style="margin-bottom:10px">'+
         '<span class="tag">Folios <b>'+REGS.length+'</b></span>'+
         '<span class="tag">Productos <b>'+nProd+'</b></span>'+
-        '<span class="tag">Contenedor MP <b>'+fmtMP(parseInt(seq||0,10)||0)+'</b></span>'+
+        '<span class="tag">Último MP <b>'+fmtMP(mp)+'</b></span>'+
+        '<span class="tag">Último RG <b>'+fmtRG(rg)+'</b></span>'+
         '<span class="tag">Pallets <b>'+nPal+'</b></span>'+
       '</div>'+
-      '<div class="dim" style="margin-bottom:10px">Esta app comparte la base, el correlativo MP y la bandeja de pallets con la app de Recepción de OC.</div>'+
+      '<div class="dim" style="margin-bottom:10px">Esta app comparte la base, el correlativo MP y la bandeja de pallets con la app de Recepción de OC. Los correlativos nunca se reinician: actualizar la app no los toca.</div>'+
       '<button class="btn sec" onclick="respaldar()">Copia de seguridad (JSON)</button>'+
       '<button class="btn sec" style="margin-top:8px" onclick="pickFile()">Cargar Excel de productos</button>'+
       '<button class="btn gh" style="margin-top:8px" onclick="closeModal();enviarPallets(null,null)">Enviar pallets a Bodega Móvil</button>'+
+      '<div class="hr" style="margin:12px 0"></div>'+
+      '<div class="dim" style="margin-bottom:8px">Solo si este teléfono es nuevo o se perdieron los datos: pon el último número que YA se emitió en bodega. El contador solo puede subir.</div>'+
+      '<div class="btnrow">'+
+        '<button class="btn sec" onclick="fijarSeq(\'mp\')">Fijar último MP</button>'+
+        '<button class="btn sec" onclick="fijarSeq(\'rg\')">Fijar último RG</button>'+
+      '</div>'+
       '<div class="btnrow" style="margin-top:12px"><button class="btn sec" onclick="closeModal()">Cerrar</button></div>');
   });
+}
+/* ---- fijar el último correlativo emitido (solo sube, nunca baja) ---- */
+function fijarSeq(tipo){
+  const esMP = (tipo==='mp');
+  const key  = esMP?'mpseq':'regseq', lsk = esMP?MPSEQ_LS:REGSEQ_LS;
+  idbGet('kv',key).then(seq=>{
+    const cur=Math.max(parseInt(seq||0,10)||0, lsSeq(lsk));
+    modal('<h3>Último '+(esMP?'contenedor MP':'folio RG')+' emitido</h3>'+
+      '<div class="dim" style="margin-bottom:10px">Escribe solo el número, sin letras. El correlativo <b>nunca vuelve atrás</b>: si pones un número igual o menor al actual, se ignora.</div>'+
+      '<div class="meta" style="margin-bottom:10px"><span class="tag">Actual <b>'+(esMP?fmtMP(cur):fmtRG(cur))+'</b></span></div>'+
+      '<label class="f">Número</label>'+
+      '<input type="number" id="seqNuevo" inputmode="numeric" min="1" step="1" value="'+cur+'">'+
+      '<div class="btnrow" style="margin-top:12px">'+
+        '<button class="btn sec" onclick="openData()">Cancelar</button>'+
+        '<button class="btn" onclick="guardarSeq(\''+(esMP?'mp':'rg')+'\','+cur+')">Fijar</button>'+
+      '</div>');
+  });
+}
+function guardarSeq(tipo,cur){
+  const esMP = (tipo==='mp');
+  const key  = esMP?'mpseq':'regseq', lsk = esMP?MPSEQ_LS:REGSEQ_LS;
+  const n = parseInt(String(($('seqNuevo')||{}).value||'').replace(/\D/g,''),10);
+  if(!isFinite(n)||n<=0){ toast('Escribe un número válido'); return; }
+  if(esMP && n>MP_MAX){ toast('Número fuera de rango'); return; }
+  if(n<=cur){ toast('El correlativo solo puede subir (actual '+cur+')'); return; }
+  idbSet('kv',key,n).then(()=>{ lsSeqSubir(lsk,n);
+    toast('Correlativo fijado en '+(esMP?fmtMP(n):fmtRG(n))); openData(); })
+   .catch(()=>toast('No se pudo guardar'));
 }
 function respaldar(){
   const payload={tipo:'regularizaciones',version:1,generado:new Date().toISOString(),regs:REGS};
@@ -1768,7 +1842,7 @@ Promise.all([
 ]).then(()=>{
   REGS.forEach(r=>{ if(!Array.isArray(r.lineas)) r.lineas=[]; });
   construirProds();
-  return sincronizarMP();
+  return sincronizarMP().then(()=>sincronizarRG());
 }).then(()=>{
   show('inicio'); renderInicio();
 }).catch(()=>{ construirProds(); show('inicio'); renderInicio(); });

@@ -89,6 +89,67 @@ internet, funciona igual sin señal.
   datos, que quedan en el teléfono). Si eso es un problema, se puede usar un repo
   privado con GitHub Pages, lo que requiere una cuenta de pago.
 
+## Repositorio nuevo, pero misma cuenta de GitHub
+
+Esta app va en un repositorio propio, aparte de `RECEPCION-VESPUCIO`. Eso **no** rompe
+nada, con una condición: que sea **la misma cuenta de GitHub**.
+
+El navegador guarda los datos por *sitio*, y el sitio es `TU-USUARIO.github.io`, no el
+repositorio. O sea que `TU-USUARIO.github.io/recepcion-vespucio/` y
+`TU-USUARIO.github.io/regularizacion/` son el mismo sitio para el teléfono: **comparten
+la base de órdenes, el correlativo MP, los folios y la bandeja de pallets**, igual que
+si estuvieran en la misma carpeta.
+
+Lo que sí cambiaría todo es publicarla en **otra cuenta** de GitHub o en un dominio
+distinto: ahí el teléfono la ve como otro sitio, no encuentra nada, y el contador
+partiría de cero (se arregla con *Fijar último MP*, ver más abajo).
+
+Dos detalles del repositorio nuevo:
+
+- Si un teléfono nunca abrió la app de Recepción, no tendrá la base de productos.
+  Para eso conviene copiar también el `ordenes.json` a este repositorio (ver más abajo).
+- El `sw.js` de este repositorio es independiente del de `RECEPCION-VESPUCIO`: cuando
+  actualices esta app, subes el `VERSION` de **este** `sw.js`, no del otro.
+
+## Los correlativos MP y RG nunca se reinician
+
+Regla permanente de la app: **el número de contenedor MP y el folio RG jamás vuelven
+a empezar de 1**. Siempre siguen desde el último número emitido.
+
+Cómo está protegido (versión 1.1):
+
+1. El número vive en la base del teléfono (IndexedDB `kv/mpseq` y `kv/regseq`).
+   **Actualizar la app no la toca**: subir un `index.html` nuevo o un `sw.js` nuevo
+   solo cambia los archivos, nunca los datos guardados.
+2. Además se guarda un **espejo en `localStorage`** (`quinta_mpseq`, `quinta_regseq`)
+   que **solo sube, nunca baja**. Si la base se pierde, el espejo levanta el contador
+   de vuelta al arrancar.
+3. Al abrir, la app se **adelanta al mayor número que encuentre**: en las recepciones
+   de OC, en las regularizaciones, en la bandeja de pallets y en las ubicaciones.
+   Nunca reparte un código que ya exista.
+4. En **Datos** hay dos botones, *Fijar último MP* y *Fijar último RG*, para teléfonos
+   nuevos o si se perdieron los datos: se escribe el último número ya emitido en
+   bodega. Solo acepta números mayores al actual; hacia atrás no deja.
+
+### Lo único que sí borra el contador
+
+El número está guardado **por sitio web**. Se pierde si:
+
+- se cambia la dirección del sitio (otra cuenta de GitHub u otro dominio) — dentro de
+  la misma cuenta `TU-USUARIO.github.io` no hay problema, aunque cambies de repositorio;
+- alguien borra los datos del navegador o desinstala la app del teléfono;
+- se usa un teléfono nuevo que nunca abrió la app.
+
+En esos tres casos el remedio es el mismo: **Datos → Fijar último MP / Fijar último RG**
+con el último número emitido. Por eso conviene anotarlo cada cierto tiempo.
+
+### Importante si son varios teléfonos
+
+Cada teléfono lleva su propia cuenta: no hay servidor que los coordine. Si dos
+teléfonos registran al mismo tiempo, los dos pueden entregar el mismo MP. Formas de
+evitarlo: que **un solo teléfono** emita contenedores, o repartir rangos por equipo con
+*Fijar último MP* (por ejemplo, teléfono 1 desde 0, teléfono 2 desde 50000).
+
 ## Opcional: base de órdenes para todos los teléfonos
 
 Al abrirse, la app busca un archivo `ordenes.json` en el mismo sitio. Si no existe,
