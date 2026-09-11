@@ -1,0 +1,3112 @@
+{
+  "ordenes": [
+    {
+      "codigo": "100302",
+      "nombre": "JARABE REMOJO SISA DIWATTS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "101002",
+      "nombre": "CACAO AMARGO PURATOS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "102103",
+      "nombre": "PROPIONATO DE SODIO WINKLER",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "103006",
+      "nombre": "MARGARINA HORNITO DIWATTS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "103612",
+      "nombre": "CREMA VEGETAL MASTER MARTINI",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "104006",
+      "nombre": "AZUCAR GRANULADA EGC",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "104010",
+      "nombre": "SAL FINA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "106101",
+      "nombre": "VINAGRE WINKLER",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "106401",
+      "nombre": "CAFE POLVO WINKLER",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107000",
+      "nombre": "CEREZAS AL JUGO DESCAROZADAS FRUCOL",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107095",
+      "nombre": "PURE DE LUCUMA (ET. VERDE) BALDE 4,5 Kg",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107098",
+      "nombre": "CREMA PASTELERA ESPECIAL PURATOS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107102",
+      "nombre": "TRUFA CHOCOLATE PURATOS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107104",
+      "nombre": "CREMA LACTEA DIWATTS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107108",
+      "nombre": "DECORCREM NEGRO PURATOS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107109",
+      "nombre": "MANJAR ARTESANAL DIWATTS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107112",
+      "nombre": "MERENGUE PURATOS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107113",
+      "nombre": "MERM. MEL GUINDA ÁCIDA QUINTA BALDE 5 Kg",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107117",
+      "nombre": "PIÑA EN RODAJAS ALTO LA CRUZ",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107120",
+      "nombre": "BRILLO FRIO RTU PURATOS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107124",
+      "nombre": "DURAZNO EN MITADES ALTO LA CRUZ",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107127",
+      "nombre": "DECORCREM BLANCO 4k PURATOS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107129",
+      "nombre": "MERM. MEL FRAMBUESA QUINTA BALDE 5 Kg",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107133",
+      "nombre": "GANACHE PURATOS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107134",
+      "nombre": "COCO RALLADO ALTO LA CRUZ",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107142",
+      "nombre": "CREMA LACTEA SOPROLE",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107157",
+      "nombre": "MERM. EBEL GUINDA (ET. VERDE) BL 5 Kg",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107158",
+      "nombre": "MER. MEL PIÑA BALDE 5 Kg",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107159",
+      "nombre": "GELATINA S/SABOR ALTO LA CRUZ",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107160",
+      "nombre": "GELATINA FRAMBUESA ALTO LA CRUZ",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107164",
+      "nombre": "YOGURT FRUTILLA DIWATTS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107170",
+      "nombre": "GRANILLO CHOCOLATE MANAR",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107174",
+      "nombre": "YOGURT FRUTILLA SOPROLE",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107181",
+      "nombre": "RELLENO PIE DE LIMON SAN CRISTOBAL",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107193",
+      "nombre": "MERMELADA DE FRAMBUESA EBEL",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107204",
+      "nombre": "RELLENO PIE MARACUYÁ BALDE 4,5 Kg",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107209",
+      "nombre": "CREMA WHIP TOPPIN RICH",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107210",
+      "nombre": "DISCO MERENGUE PAVESI",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107211",
+      "nombre": "MERENGUITOS PAVESI",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107215",
+      "nombre": "LECHE CONDENSADA NESTLE",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107227",
+      "nombre": "ETIQUETA CIRCULAR 90 IMPRESA TORTA MERENGUE FRAMBUESA ESPECIAL JUMBO",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107228",
+      "nombre": "ETIQUETA CIRCULAR 90 IMPRESA TORTA MERENGUE LÚCUMA ESPECIAL JUMBO",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107237",
+      "nombre": "CREMA CHOCOLATE RICHS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107239",
+      "nombre": "COGÑAC TILICURA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107242",
+      "nombre": "CREMA RELLENO SABOR NARANJA ESP. QUINTA SC 1X5 Kg",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107247",
+      "nombre": "DULCE DE LECHE MASTER MARTINI",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107249",
+      "nombre": "COBERTURA CHOCOLATES MONEDAS PURATOS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107259",
+      "nombre": "JARABE 3 LECHES SCHOLLE 10LT DIWATTS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107260",
+      "nombre": "JARABE DE REMOJO OCTOBINS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107262",
+      "nombre": "REMOJO 3 LECHES RICHI",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107275",
+      "nombre": "SALSA DE GUINDA BALDE 5 Kg",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107276",
+      "nombre": "CAJA TORTA MEDIANA PROSERVAR",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107278",
+      "nombre": "JARABE DE REMOJO RON-NJA 40 BIDÓN 5 Lt",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107280",
+      "nombre": "NUEVO BRILLO PARA CONGELADO PURATOS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107282",
+      "nombre": "PIÑA EN CUBOS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107283",
+      "nombre": "CREMA CHANTIFESTA RICHS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107292",
+      "nombre": "DISCO CARTÓN CORRUGADO 19 CM EHLAN",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107294",
+      "nombre": "DULCE DE RELLENO DIWATTS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107300",
+      "nombre": "COMBO 88 ALTA 12 PP MOLDES PAC",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107303",
+      "nombre": "CURLS CHOCOLATE PURATOS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107306",
+      "nombre": "FRAMBUESA CONGELADA FRUTOS DEL MAIPO",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107308",
+      "nombre": "ACEITE FRITO MASTER DIWATTS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107310",
+      "nombre": "VINAGRE BLANCO EGC",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107312",
+      "nombre": "CEREZAS AL JUGO CAMPOS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107316",
+      "nombre": "PLANCHA DE CARTON 1X1,20 ASTRA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107318",
+      "nombre": "DISCO CARTÓN CAFE CORRUGADO 19 CM ASTRA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107319",
+      "nombre": "FILLING DE GUINDA BALDE 4,5 Kg",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107323",
+      "nombre": "COMBO 88 ALTA 12 PP LISA MOLDES PAC",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107324",
+      "nombre": "MARRASQUINO FRUCOL",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107326",
+      "nombre": "QUINOA PERLA DE COLORES ZUKKER",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107330",
+      "nombre": "HARINA NUEZ TRES ERRE",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107331",
+      "nombre": "MANTEQUILLA WATTS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107333",
+      "nombre": "LECHE CONDENSADA UNTABLE NESTLE",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107337",
+      "nombre": "CREMA AMBIENTE PURATOS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107339",
+      "nombre": "CUPULA TARTA 1025-3 MOLDES PAC",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107345",
+      "nombre": "CUPULA 170BX DEANDES",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107356",
+      "nombre": "CHOCOLATE SEMI AMARGO 54% MEL",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107357",
+      "nombre": "DISCO CARTÓN BLANCO 19 FPS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107360",
+      "nombre": "RELLENO PIE DE FRAMBUESA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107361",
+      "nombre": "CAJA  PTG AZUL 15PP ALTA SYCOR",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107362",
+      "nombre": "CAJA PTG 15PP JUMBO SYCOR",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107363",
+      "nombre": "CAJA PTG 15PP SISA SYCOR",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107364",
+      "nombre": "CAJA TORTA MEDIANA SYCOR",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107365",
+      "nombre": "CAJA PRODUCTO SECO (PS) SYCOR",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107366",
+      "nombre": "CAJA MADRE DE PLANCHAS (PL) SYCOR",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107367",
+      "nombre": "CAJA DE ENCOMIENDA (EN) SYCOR",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107368",
+      "nombre": "FRAMBUESA MITAD CONGELADA MEL",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107403",
+      "nombre": "VINAGRE VINO BLANCO",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107405",
+      "nombre": "HOJARASCA 25p. PAVESI",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "170173",
+      "nombre": "MERM. EBEL GRANDES CONSUMIDORES FRUTILLA BALDE 5 Kg",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "300003",
+      "nombre": "GRANA CHOCOLATE",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "300004",
+      "nombre": "GRANA BLANCA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "353001",
+      "nombre": "INSUMO SEMI-ELABORADO INTERPLANTA BIZCOCHO VAINILLA 19cm",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "353002",
+      "nombre": "INSUMO SEMI-ELABORADO INTERPLANTA BIZCOCHO CHOCOLATE 19cm",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "353003",
+      "nombre": "Porción vainilla  Semi-Elab UND",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "353009",
+      "nombre": "DISCO PANQUEQUE VAINILLA SEMI-ELAB UND",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "362029",
+      "nombre": "PLANCHA DE HOJA  42X36X1 cm (1x12)",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "362105",
+      "nombre": "HOJARASCA 19 CMS. PAVESI",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "393040",
+      "nombre": "SUB DISCO HOJA 15 PP",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "393215",
+      "nombre": "INSUMO INTERPLANTA BIZCOCHO BLANCO 17 CM",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "393216",
+      "nombre": "INSUMO INTERPLANTA BIZCOCHO CHOCOLATE 17 CMS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "393320",
+      "nombre": "HOJA SEPARADORA TORTA DIAMETRO 230 MMS.",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "393321",
+      "nombre": "HOJA SEPARADORA TORTA MEDIANA DIAMETRO 210 MMS.",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "393349",
+      "nombre": "Tartaleta mediana semi-elab",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "393384",
+      "nombre": "INSUMO SEMI-ELABORADO BIZCOCHO VEGANO",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "393399",
+      "nombre": "PALITOS DE CHOCOLATE PURATOS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "393400",
+      "nombre": "COVER PASTELERÍA U2 SEMIAMARGO GOTA PURATOS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "393415",
+      "nombre": "INSUMO SEMIELABORADO GALLETA DE VINO  MOLIDA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "393419",
+      "nombre": "INSUMO SEMI ELABORADO BROWNIE VEGANO INTERPLANTA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "393421",
+      "nombre": "ETIQUETA CIRCULAR 9cm TORTA CHOCOLATE REAL",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "393422",
+      "nombre": "ETIQUETA CIRCULAR 9cm TORTA CALUGA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "393423",
+      "nombre": "ETIQUETA CIRCULAR 9cm TORTA PANQUEQUE CHOCOLATE GUINDA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "393424",
+      "nombre": "ETIQUETA CIRCULAR 9cm TORTA PIÑA VEGANA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "393425",
+      "nombre": "ETIQUETA CIRCULAR 9cm TORTA SELVA NEGRA VEGANA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "393426",
+      "nombre": "ETIQUETA CIRCULAR 9cm TORTA DOÑA ISABEL",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "393427",
+      "nombre": "TARTALETA FAMILIAR RECETA TRADICIONAL",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "393437",
+      "nombre": "INSUMO INTERPLANTA BIZCOCHO CONFETI 17 CM",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "400104",
+      "nombre": "BOLSA DISCO HOJA 35X35 CM x35 MICRAS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "400202",
+      "nombre": "BOLSA PREPICADA 50x75",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "400203",
+      "nombre": "BOLSA PREPICADA BANDEJA (22+60+22)104x90",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "401010",
+      "nombre": "STRECH FILM BLANCO",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "401011",
+      "nombre": "STRECH FILM NEGRO",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "401012",
+      "nombre": "STRECH FILM VERDE",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "401013",
+      "nombre": "STRECH FILM AZUL",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "401014",
+      "nombre": "STRECH FILM ANARANJADO",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "401015",
+      "nombre": "STRECH FILM AMARILLO",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "401019",
+      "nombre": "STRECH FILM ROJO",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "402132",
+      "nombre": "FRAMBUESA CONGELADA ALTA FRUTA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "402251",
+      "nombre": "CAJA PTG 15PP JUMBO VTM SUR",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "402252",
+      "nombre": "CAJA PTG 15PP SISA VTM SUR",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "402253",
+      "nombre": "CAJA TORTA MEDIANA VTM SUR",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "402254",
+      "nombre": "BOLSA PREPICADA BANDEJA 100X90",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "402255",
+      "nombre": "CINTA DE EMBALAJE 72x100 SOLUTION",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "402257",
+      "nombre": "HOJA SEPARADORA TORTA DIAMETRO 230 MMS ASTRA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "403101",
+      "nombre": "DISCO CARTON BLANCO 19,5 JUMBO ARRIAZA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "403103",
+      "nombre": "DISCO CARTON MH 15 PP ARRIAZA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "403104",
+      "nombre": "HUINCHA CARTON MH 8.5x75 ARRIAZA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "403210",
+      "nombre": "CUPULA TORTA 15PP (98-45) MONSALVE CENCOSUD",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "403225",
+      "nombre": "CUPULA 170B DEANDES",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "403231",
+      "nombre": "CUPULA TORTA ALTA  15PP (98-5) MONSALVE CENCOSUD",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "403268",
+      "nombre": "INSUMO DISCO PANQUEQUE CHOCOLATE 18 CM.",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "403278",
+      "nombre": "DISCO CARTON CAFE CORRUGADO 15,5CM CM ASTRA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "403314",
+      "nombre": "DISCO DE PAPEL PQQ CURICO",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "403338",
+      "nombre": "BLISTER 7189 1 PASTEL DEANDES",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "403393",
+      "nombre": "CAJA PTG 15PP SISA PROSERVAR",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "403394",
+      "nombre": "CAJA PTG 15PP JUMBO PROSERVAR",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "403395",
+      "nombre": "PLANCHA DE CARTON 1X1,20 PROSERVAR",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "403407",
+      "nombre": "MERM. LAMARKA FRAMBUESA BALDE 5 Kg",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "404309",
+      "nombre": "CINTA NEGRA GC ZUKKER",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "404316",
+      "nombre": "BASE DE TARTALETA SOFT BLANCA PAVESI",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "404718",
+      "nombre": "ETIQUETA BLANCA 100x80 SISA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "404719",
+      "nombre": "ETIQUETA BLANCA 100x120 SISA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "404720",
+      "nombre": "ETIQUETA BLANCA 100x50",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "404722",
+      "nombre": "ETIQUETA BLANCA 30X40",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "404731",
+      "nombre": "ETIQUETA  4,2X6cm IMPR.PASTEL 5 COLOR + BARNIZ UV",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "404735",
+      "nombre": "ETIQUETA CIRCULAR 9,8cm IMPR. TARTA  5 COL +UV",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "404736",
+      "nombre": "ETIQUETA CIRCULAR 9,8cm IMPR. PIE  5 COL +UV",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "404737",
+      "nombre": "ETIQUETA CIRCULAR 9cm IMPR. T.CREMA PIÑA 5 COL +UV",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "404738",
+      "nombre": "ETIQUETA CIRCULAR 9cm IMPR. TORTA SELVA NEGRA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "404739",
+      "nombre": "ETIQUETA CIRCULAR 9cm IMPR. TORTA CREMA MANJAR",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "404744",
+      "nombre": "ETIQUETA CIRCULAR 9cm IMPR. TORTA TRS LECHES",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "404745",
+      "nombre": "ETIQUETA CIRCULAR 9cm IMPR. TORTA YOGURT FRUTILLA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "404748",
+      "nombre": "ETIQUETA BLANCA 40x200 SISA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405031",
+      "nombre": "ETIQUETAS CIRCULAR 9cm IMPR. TORTA VIENA SISA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405034",
+      "nombre": "ETIQUETAS CIRCULAR 9cm IMPR. TORTA HOJA MANJAR",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405036",
+      "nombre": "ETIQUETAS CIRCULAR 9cm IMPR. PANQUEQUE NARANJA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405050",
+      "nombre": "ETIQUETAS 75X130 IMPRESAS CUATRICOMIA MAS UV (MAXIMA)",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405089",
+      "nombre": "ETIQUETA TORTA MERENGUE FRAMBUESA CONGELADA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405090",
+      "nombre": "ETIQUETA TORTA MERENGUE LUCUMA CONGELADA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405103",
+      "nombre": "ETIQUETA BLANCA 200X50 SISA OPP",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405108",
+      "nombre": "ETIQUETA TORTA  MOCACCINO",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405111",
+      "nombre": "ETIQUETA CIRCULAR TORTA AMOR",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405115",
+      "nombre": "CREMA PASSIONATA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405119",
+      "nombre": "ETIQUETAS CIRCULAR 9cm IMPR. TORTA PIÑA JUMBO",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405120",
+      "nombre": "ETIQUETAS CIRCULAR 9cm  TORTA SELVA NEGRA JUMBO",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405121",
+      "nombre": "ETIQUETAS CIRCULAR 9cm IMPR.TORTA TRES LECHES JUMB0",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405122",
+      "nombre": "ETIQUETAS CIRCULAR 9cm IMPR. TORTA LUCUMA JUMBO",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405123",
+      "nombre": "ETIQUETAS CIRCULAR 9cm IMPR. TORTA VIENA JUMBO",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405124",
+      "nombre": "ETIQUETAS CIRCULAR 9cm IMPR. TORTA BEATRIZ JUMBO",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405126",
+      "nombre": "ETIQUETAS CIRCULAR 9cm IMPR. TORTA BOM BOM",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405127",
+      "nombre": "ETIQ.CIRCULAR 9cm TORTA PANQUEQUE NARANJA JUMBO",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405128",
+      "nombre": "ETIQUETA CIRCULAR 9cm TORTA HOJA MANJAR JUMBO",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405129",
+      "nombre": "ETIQ.CIRCULAR 9cm IMPR. TORTA HOJA PASTELERA JUMBO",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405130",
+      "nombre": "ETIQUETAS CIRCULAR 9cm IMPR. TORTA TRUFFA JUMBO",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405131",
+      "nombre": "ETIQUETAS CIRCULAR 9cm IMPR. TORTA 4 LECHES JUMBO",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405133",
+      "nombre": "RALLADO NEGRO 3mm ZUKKER",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405159",
+      "nombre": "ETIQUETA BLANCA 120X100 OPP",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405160",
+      "nombre": "ETIQUETA 200X50 POLIPROPILENO IMPR. QUINTA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405168",
+      "nombre": "ETIQUETAS 22X32 BLANCA ADHESIVO ULTRA FRÍO",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405205",
+      "nombre": "ETIQ.CIRCULAR 9cm IMPR. TORTA SAN JORGE LÚCUMA ARTESANAL JUMBO",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405206",
+      "nombre": "ETIQ.CIRCULAR 9cm IMPR. TORTA SAN JORGE GUINDA ARTESANAL JUMBO",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405207",
+      "nombre": "ETIQ.CIRCULAR 9cm IMPR. TORTA SAN JORGE CHOCOLATE ARTESANAL JUMBO",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405246",
+      "nombre": "HUEVO EN POLVO OVOSUR",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405278",
+      "nombre": "CUPULA TORTA 15PP (98-45) MOLDESPAC",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405283",
+      "nombre": "CUPULA TORTA ALTA SISA FPS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405300",
+      "nombre": "ETIQ. CIRCULAR 9cm IMPR. PIE DE LIMÓN ESPECIAL JUMBO",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405301",
+      "nombre": "ETIQ. CIRCULAR 9cm IMPR. PIE DE FRAMBUESA ESPECIAL JUMBO",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405302",
+      "nombre": "ETIQ. CIRCULAR 9cm IMPR. PIE DE MARACUYÁ ESPECIAL JUMBO",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405305",
+      "nombre": "ESENCIA CAFE CARAMELO SABORES Y FRAGANCIA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405310",
+      "nombre": "ETIQUETA OPP TRANSPARENTE 22X32 CRISME",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405319",
+      "nombre": "LAMINA ACETATO TRANSPARENTE 7x60 CM FPS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405320",
+      "nombre": "JUGO DE LIMÓN CONGELADO WATT",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405330",
+      "nombre": "JUGO EN POLVO FRUTILLA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405350",
+      "nombre": "MOSTACILLA CIRCULO 6 COLORES AMBROSIA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405352",
+      "nombre": "ETIQ. CIRCULAR 90cm IMPR. TORTA CUSINE & CO SISA CONFETTI",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405358",
+      "nombre": "ETIQ. CIRCULAR 90cm IMPR. JUMBO TARTA FRUTA MIXTA SURTIDA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405359",
+      "nombre": "ETIQ. CIRCULAR 90cm IMPR. TORTA CUSINE & CO SISA TORTA CARAMEL",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405370",
+      "nombre": "LECHE CONDENSADA MONACO",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405376",
+      "nombre": "ETIQUETA CIRCULAR 9cm TORTA SACHER",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405377",
+      "nombre": "ETIQUETA CIRCULAR 9cm TORTA MANJAR LUCUMA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405378",
+      "nombre": "ETIQUETA CIRCULAR 9cm TORTA GUINDA CHOCOLATE",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405380",
+      "nombre": "CUPULA TORTA ALTA  15PP (98-5) FPS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405382",
+      "nombre": "LECHE CONDENSADA EGC",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "501146",
+      "nombre": "CAJA PLASTICA AZUL QUINTA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "501147",
+      "nombre": "JARABE DE REMOJO 35° BIDON",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "100105",
+      "nombre": "MIX BIZC. RED VELVET PURATOS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "100207",
+      "nombre": "MIX BIZCOCHO BLANCO SAN CRISTOBAL",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "100221",
+      "nombre": "MIX BIZCOCHO CHOCOLATE SAN CRISTOBAL",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "100236",
+      "nombre": "PREMEZCLA BIZCOCHO ROJO HI SAN CRISTOBAL",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "100303",
+      "nombre": "JARABE DE REMOJO 35° TOTEM 1000 Lt",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "102237",
+      "nombre": "PREMEZCLA BIZCOCHO ANARANJADO HI SAN CRISTOBAL",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "102238",
+      "nombre": "PREMEZCLA BIZCOCHO VERDE HI SAN CRISTOBAL",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "102239",
+      "nombre": "PREMEZCLA BIZCOCHO MORADO HI SAN CRISTOBAL",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "103007",
+      "nombre": "MARGARINA HORNITO CERRILLOS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "103104",
+      "nombre": "ACEITE VEGETAL 500CC EGC",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "104001",
+      "nombre": "AZUCAR FLOR ALTO LA CRUZ",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "104003",
+      "nombre": "AZUCAR FLOR ANTI-HUMEDAD MANAR",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "104004",
+      "nombre": "AZUCAR RUBIA EGC",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "105001",
+      "nombre": "HUEVO LIQUIDO LAS RASTRAS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "105002",
+      "nombre": "HUEVO LIQUIDO TOTEM ARIZONA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "106302",
+      "nombre": "CANELA EN POLVO ALTO LA CRUZ",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107125",
+      "nombre": "DURAZNO EN CUBOS ALTO LA CRUZ",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107130",
+      "nombre": "MERMELADA FRUTILLA GRADO 1 MEL",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107131",
+      "nombre": "MERM. MEL DAMASCO MOL. BALDE 5 Kg",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107144",
+      "nombre": "MANZANAS SLICE MEL",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107147",
+      "nombre": "MANJAR GRADO 3 LANGER",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107148",
+      "nombre": "SABOR AROMA LUCUMA FRANCIAAROMA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107155",
+      "nombre": "MER. EBEL PIÑA BALDE 5 Kg",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107156",
+      "nombre": "MERMELADA DE LUCUMA DIWATTS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107172",
+      "nombre": "MERM. MEL DURAZNO ENT. BALDE 5 Kg",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107183",
+      "nombre": "FRUIT FILLING MANZANA FRUCOL",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107240",
+      "nombre": "CRUSHED DE FRAMBUESA ALTO LA CRUZ",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107263",
+      "nombre": "RELLENO SABOR VAINILLA PURATOS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107277",
+      "nombre": "PULPA MARACUYÁ CON PEPAS ALTA FRUTA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107287",
+      "nombre": "HUEVO LIQUIDO TOTE LAS RASTRAS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107298",
+      "nombre": "ETIQUETA GENÉRICA TORTA RAINBOW",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107301",
+      "nombre": "TEGRAL BROWNIE VEGGI PURATOS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107311",
+      "nombre": "HARINA ORO 2",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107320",
+      "nombre": "COLDFIL PIE DE LIMÓN",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107321",
+      "nombre": "MERENGUE CONGELABLE PURATOS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107325",
+      "nombre": "CHOCOLATE ARCOÍRIS  AMBROSIA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107327",
+      "nombre": "ETIQUETA GENERICA TORTA HOJA MANJAR CHOCOLATE",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107336",
+      "nombre": "GALLETA VINO CAROZZI",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107351",
+      "nombre": "PASA MORENA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107358",
+      "nombre": "MERMELADA FRUTOS DEL BOSQUE MEL",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107359",
+      "nombre": "MERMELADA CIRUELA MEL",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107404",
+      "nombre": "JUGO EN POLVO SABOR FRUTILLA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "170174",
+      "nombre": "RON DORADO",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "170175",
+      "nombre": "MERMELADA DURAZNO PURATOS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "170177",
+      "nombre": "TEGRAL MUFFINS VEGANO PURATOS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "170179",
+      "nombre": "CREMA AMBIENTE ICING PURATOS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "201002",
+      "nombre": "DESMOLDANTE PARA BATIDOS PURATOS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "201005",
+      "nombre": "HUEVO LIQUIDO AGRICOVIAL",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "201103",
+      "nombre": "PROTEKTOR PURATOS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "362106",
+      "nombre": "HOJARASCA OBERENA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "393222",
+      "nombre": "PLANCHA PANQUEQUE VAINILLA TERCEROS PAVESI",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "393322",
+      "nombre": "HOJA SEPARADORA TARTALETA DIAMETRO 255 MMS.",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "400101",
+      "nombre": "BOLSA 30X32 CM 35 MICRAS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "400205",
+      "nombre": "BOLSA PEBD 40x42 CM x35 MICRAS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "400210",
+      "nombre": "BOLSA PREPICADA BANDEJA  100*90 COLOR AZUL",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "402124",
+      "nombre": "MIX TARTALETA PURATOS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "402128",
+      "nombre": "MIX BIZCOCHO SIN AZUCAR PURATOS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "402130",
+      "nombre": "NUEZ PICADILLO LAS TRES ERRES",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "403015",
+      "nombre": "PAPEL BEIGE 38.5 x 44.5 ARRIAZA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "403219",
+      "nombre": "CAPSULA OVALADA N° 10 ARRIAZA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "403244",
+      "nombre": "CUPULA 271 BX DEANDES",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "403245",
+      "nombre": "Borde G 220x25 VERTIENTES",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "403248",
+      "nombre": "CUPULA 15 PP ALTA WALMART",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "403271",
+      "nombre": "DISCO CARTÓN CORRUGADO 15,5 CM EHLAN",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "403308",
+      "nombre": "CAJA MADRE DE PLANCHAS (PL) PAIMASA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "403331",
+      "nombre": "MIX BIZCOCHO CHOCOLATE PURATOS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "403368",
+      "nombre": "HOJA SENCILLA PROSERVAR",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "403373",
+      "nombre": "HOJA SEPARADORA PLANCHAS PROSERVAR",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "403391",
+      "nombre": "MERM. EBEL PIÑA QUINTA BALDE 5 Kg",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "403408",
+      "nombre": "MERM. LAMARKA DAMASCO BALDE 5 Kg",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "404733",
+      "nombre": "ETIQUETA CIRCULAR 9,8cm IMPR. KUCHEN  5 COL +UV",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "404755",
+      "nombre": "ETIQUETA KUCHEN MANZANA WALMART",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "404756",
+      "nombre": "ETIQUETA KUCHEN 4 SABORES WALMART",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "404757",
+      "nombre": "ETIQUETA KUCHEN FRAMBUESA WALMART",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405134",
+      "nombre": "TRIANGULO NEGRO 45mm ZUKKER",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405161",
+      "nombre": "CREMA NATA RICH",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405170",
+      "nombre": "DISCO CARTON 19CM MICROCORRUGADO ALIMPACK",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405172",
+      "nombre": "ETIQUETA GENERICA TORTA CHOCOLATE 8 PP",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405174",
+      "nombre": "ETIQUETA GENERICA TORTA CHOCOLATE MANJAR",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405176",
+      "nombre": "ETIQUETA GENERICA TORTA CHOCOQUINDA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405178",
+      "nombre": "ETIQUETA GENERICA TORTA CREMA MARACUYA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405180",
+      "nombre": "ETIQUETA GENERICA TORTA CREMA MOKA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405182",
+      "nombre": "ETIQUETA GENERICA TORTA CREMA PIÑA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405186",
+      "nombre": "ETIQUETA GENERICA TORTA HOLANDESA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405187",
+      "nombre": "ETIQUETA GENERICA TORTA MOUSSE MANJAR",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405189",
+      "nombre": "ETIQUETA GENERICA TORTA SELVA NEGRA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405191",
+      "nombre": "ETIQUETA GENERICA TORTA TRES LECHES",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405193",
+      "nombre": "ETIQUETA GENERICA TORTA SAN JORGE",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405198",
+      "nombre": "ETIQUETA CONSUMO IMPRESO COLOR CAFÉ",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405199",
+      "nombre": "ETIQUETA CONSUMO IMPRESO COLOR MOSTAZA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405214",
+      "nombre": "CREMYVIT NARANJA TM1 PURATOS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405216",
+      "nombre": "ETIQUETA GENERICA TORTA PANQUEQUE NARANJA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405284",
+      "nombre": "CUPULA TORTA ALTA CON TOPE WALMART FPS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405285",
+      "nombre": "FRUTILLA PICADILLO CONGELADA ALTA FRUTA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405311",
+      "nombre": "TRIANGULO BLANCO RAYADO ROJO",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405312",
+      "nombre": "ETIQUETA GENERICA TORTA FRUTOS DEL BOSQUE",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405318",
+      "nombre": "MERM. EBEL FRUTOS DEL BOSQUE BALDE 5 KG",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405331",
+      "nombre": "JUGO EN POLVO DURAZNO",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405332",
+      "nombre": "GRANILLO DE COLORES MANAR",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405333",
+      "nombre": "GALLETA OREO REGULAR BEZANILLA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405334",
+      "nombre": "OREO MEDIUM CRUMBS (TROZOS) BEZANILLA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405336",
+      "nombre": "CINTA DE EMBALAJE 72x100 REMINISEN",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405346",
+      "nombre": "DISCO CARTON BLANCO 17CM FPS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405347",
+      "nombre": "DISCO CARTON BLANCO 24 FPS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405353",
+      "nombre": "ETIQ. CIRCULAR 90cm IMPR. TORTA CUSINE & CO JUMBO COOKIES AND CREAM",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405354",
+      "nombre": "ETIQ. CIRCULAR 90cm IMPR. JUMBO KUCHEN DE DURAZNO",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405355",
+      "nombre": "ETIQ. CIRCULAR 90cm IMPR. JUMBO KUCHEN DE FRUTILLA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405356",
+      "nombre": "ETIQ. CIRCULAR 90cm IMPR. JUMBO KUCHEN DE MANZANA TRENZADO",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405357",
+      "nombre": "ETIQ. CIRCULAR 90cm IMPR. JUMBO KUCHEN DE STROISSEL MANZANA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405360",
+      "nombre": "ETIQ. CIRCULAR 90cm IMPR. JUMBO KUCHEN DE FRAMBUESA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405374",
+      "nombre": "COMBO 88 ALTA 12 PP FOOD PACK",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405375",
+      "nombre": "CUPULA TORTA ALTA  15PP (98-5) FOOD PACK",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "403266",
+      "nombre": "PLANCHA DE CARTON 1X1,20 EHLAN",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "403310",
+      "nombre": "CAJA  PTG AZUL 15PP ALTA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "403315",
+      "nombre": "CAJA DE PASTELES PAIMASA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405304",
+      "nombre": "COLORANTE ROJO POLVO",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405399",
+      "nombre": "RELLENO AVELLANA CERRILLOS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "403251",
+      "nombre": "CUPULA 98-9 ALTA 12 PP MONSALVE",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405402",
+      "nombre": "ETIQUETA GENERICA TORTA CHOCOLATE AVELLANA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405398",
+      "nombre": "RON DORADO CABO VIEJO 750CC",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405422",
+      "nombre": "MOLDES PAPEL BASE TARTA MOLDESPAC",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405418",
+      "nombre": "AZUCAR FLOR 5KG MEL ALIMENTOS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107225",
+      "nombre": "CAFE POLVO ICB",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107406",
+      "nombre": "OJITOS HALLOWEEN AMBROSIA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107348",
+      "nombre": "PIÑA EN RODAJA LAS PERDICES",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "402131",
+      "nombre": "FRAMBUESA CONGELADA MINUTO VERDE",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405421",
+      "nombre": "COLORANTE NARANJA FLORAMATIC",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405446",
+      "nombre": "JUGO POLVO DURAZNO",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405344",
+      "nombre": "DISCO DE PANQUEQUE VAINILLA 18 CM ENCOMIENDA TOTTUS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405444",
+      "nombre": "CUPULA TORTA 15 PP ALTA COEXPAN",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107402",
+      "nombre": "CUPULA MINI TORTA BASE NEGRA 15,5x7,5 FOOD PACK",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "100200",
+      "nombre": "MIX TARTALETA SAN CRISTOBAL",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107346",
+      "nombre": "PIÑA EN CUBOS LAS PERDICES",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107344",
+      "nombre": "CUPULA TORTA ALTA  15PP (98-5) MOLDESPAC",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405445",
+      "nombre": "BASE TORTA 15PP ALTA COEXPAN",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "362099",
+      "nombre": "GRANA DE HOJA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "402263",
+      "nombre": "BOLSA PREPICADA BANDEJA  100*90 COLOR AZUL ASTRA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107407",
+      "nombre": "ETIQUETA GALLETA AMERICAN CRISPY CHIP DE CHOCOLATE",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107408",
+      "nombre": "ETIQUETA GALLETA AMERICAN CRISPY CARAMELO SALADO",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107409",
+      "nombre": "ETIQUETA GALLETA AMERICAN CRISPY ALMENDRAS Y CRAMBERRY",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107410",
+      "nombre": "ETIQUETA GALLETA AMERICAN CRISPY BROWNIE CHIPS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107411",
+      "nombre": "ETIQUETA GALLETA AMERICAN COCADA CRANBERRY",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107412",
+      "nombre": "ETIQUETA GALLETA AMERICAN CHUNK CHOCOLATE",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107413",
+      "nombre": "ETIQUETA GALLETA AMERICAN CHUNK MACADAMIA Y CHOCOLATE BLANCO",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107414",
+      "nombre": "ETIQUETA GALLETA AMERICAN CHUNK CHOCOLATE Y CARAMELO",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405226",
+      "nombre": "CUPULA 170 BX BUENAVENTURA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405383",
+      "nombre": "ESTUCHE GALLETAS VERA Y GIANNINI",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405479",
+      "nombre": "ETIQUETA BLANCA 180X50 PAPEL SEMIBRILLO CRISME",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107176",
+      "nombre": "RON TILICURA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107123",
+      "nombre": "PIÑA EN CUBOS ALTO LA CRUZ",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "403100",
+      "nombre": "DISCO CARTON BLANCO 24 JUMBO ARRIAZA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "403108",
+      "nombre": "DISCO CARTON BLANCO 17CM ARRIAZA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "403330",
+      "nombre": "MIX BIZCOCHO BLANCO PURATOS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107342",
+      "nombre": "CREMA CHANTYPACK PURATOS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107343",
+      "nombre": "OREO SMALL CRUMBS 500 GRS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "402111",
+      "nombre": "FILM TRANSPARENTE  685 MM (23CM) BATTISTA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107400",
+      "nombre": "MANJAR ARTESANAL DAILY",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405489",
+      "nombre": "CUPULA TARTA 1025-5 MOLDES PAC",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107418",
+      "nombre": "ETIQUETA GENERICA TORTA SELVA NEGRA ESPECIAL WALMART",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107419",
+      "nombre": "ETIQUETA GENERICA TORTA CREMA PIÑA ESPECIAL WALMART",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405491",
+      "nombre": "FILLING DE MANZANA MEL",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405436",
+      "nombre": "PURE DE MANZANA BALDE 4,5 Kg MEL",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107001",
+      "nombre": "MARRASQUINO ALTO LA CRUZ",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405499",
+      "nombre": "MANTEQUILLA CON SAL SOPROLE",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405501",
+      "nombre": "BASE TORTA CON TOPE COEXPAN",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "403208",
+      "nombre": "BLISTER PARA BERLINES ART 401-A DEANDES",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405379",
+      "nombre": "RELLENO AVELLANA MASTER MARTINI",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107295",
+      "nombre": "PASTA MEL DE MARACUYÁ BALDE 5 KG",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107296",
+      "nombre": "CINTA COLOR NIÑO ZUKKER",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "403249",
+      "nombre": "CUPULA 15 PP BAJA WALMART",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "170178",
+      "nombre": "TEGRAL BIZCOCHUELO PURATOS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405492",
+      "nombre": "ETIQUETA GENERICA TORTA MIL HOJAS MANJAR ESPECIAL WALMART",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107401",
+      "nombre": "DURAZNO EN SLICE LAS PERDICES",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405419",
+      "nombre": "CAJA DOS TORTAS PROSERVAR",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107417",
+      "nombre": "CREMA PASTELERA NARANJA BAKELS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405500",
+      "nombre": "PIÑA EN CUBOS CAMPOS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107416",
+      "nombre": "MIX QUEQUE SATÍN SAN CRISTÓBAL",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "100206",
+      "nombre": "HARINA 061 FINA HOJA SAN CRISTOBAL",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405507",
+      "nombre": "OREO MEDIUM CRUMBS (TROZOS) BEZANILLA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107289",
+      "nombre": "HOJARASCA 16CM OBERENA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405503",
+      "nombre": "CAJA PASTELES ASTRA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "403269",
+      "nombre": "PROPIONATO DE CALCIO 14 KG WINKLER",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405508",
+      "nombre": "ZANAHORIA GANACHE CHOCOLATE AMBROSIA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405524",
+      "nombre": "CREMFIL DULCE DE LECHE PURATOS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405461",
+      "nombre": "ETIQUETA CIRCULAR 4cm IMPR. PASTEL SISA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107349",
+      "nombre": "FLOR DE LOTO CHOCOLATE MORADA AMBROSIA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405531",
+      "nombre": "RALLADO 3mm BICOLOR BLANCO-ROSADO ZUKKER",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107313",
+      "nombre": "DURAZNO EN CUBOS CAMPOS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405533",
+      "nombre": "ULTRA RICH CLASICA UHT",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "404749",
+      "nombre": "ETIQUETA BLANCA 100x80 JUMBO",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107291",
+      "nombre": "ETIQUETA GENERICA TORTA PANQUEQUE LÚCUMA CROCANTE",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "402135",
+      "nombre": "COLORANTE AZUL BRILLANTE FLORAMATIC",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107174",
+      "nombre": "YOGURT FRUTILLA SOPROLE",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107221",
+      "nombre": "CONJUNTO DISEÑO DÍA DEL PADRE AMBROSIA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107401",
+      "nombre": "DURAZNO EN SLICE LAS PERDICES",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405335",
+      "nombre": "STRECH FILM REMINISEN",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405496",
+      "nombre": "ETIQUETA DECORATIVA PANQUEQUE NARANJA JUMBO",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405493",
+      "nombre": "ETIQUETA DECORATIVA PASTEL MIL HOJAS PASTELERA JUMBO",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405494",
+      "nombre": "ETIQUETA DECORATIVA PASTEL PIÑA JUMBO",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405497",
+      "nombre": "ETIQUETA DECORATIVA PASTEL SELVA NEGRA JUMBO",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405495",
+      "nombre": "ETIQUETA DECORATIVA PASTEL TRES LECHES JUMBO",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405498",
+      "nombre": "ETIQUETA DECORATIVA PASTEL TRUFA JUMBO",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405528",
+      "nombre": "MIX QUEQUE AMERICANO SAN CRISTOBAL",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "403383",
+      "nombre": "DISCO CARTON BLANCO 19 ECOPLASTIC",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107314",
+      "nombre": "MARRASQUINO CAMPOS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107152",
+      "nombre": "NUEZ PICADILLO CAMPOS DE CHILE",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405543",
+      "nombre": "NUEZ PICADILLO CAMPOS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405506",
+      "nombre": "GALLETA OREO REGULAR ALCA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107335",
+      "nombre": "GALLETA VINO NESTLE",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405563",
+      "nombre": "BIZCOCHO CHOCOLATE HI MARMIX",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405562",
+      "nombre": "MIX  BIZCOCHO 3 LECHES PURATOS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405049",
+      "nombre": "ETIQUETA AUTOADHESIVA 22X32 POLIPROPILENO (OPP)",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405572",
+      "nombre": "ETIQUETA GENÉRICA TORTA SELVA NEGRA MEDIANA WALMART",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405571",
+      "nombre": "ETIQUETA GENÉRICA TORTA CREMA PIÑA MEDIANA WALMART",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405539",
+      "nombre": "LECHE CONDENSADA WATTS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107281",
+      "nombre": "BLISTER 7189 1 PASTEL BUENAVENTURA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405570",
+      "nombre": "PM CREAM VELVET BAKELS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405573",
+      "nombre": "T. BIZCOCHO CHOCOLATE PLUS PURATOS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107197",
+      "nombre": "COBERTURA CHOCOLATE BLANCO",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405574",
+      "nombre": "PIÑA EN RODAJAS CAMPOS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405438",
+      "nombre": "CARTULINA BLANCA EMPLACADA DIAMTERO 19CM ALIMPACK",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405465",
+      "nombre": "JUGO POLVO FRUTILLA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405558",
+      "nombre": "RELLENO CREMA VAINILLA BAKELS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405583",
+      "nombre": "DISCO MICROCORRUGADO EMPLACADO 19 CM DIÁMETRO ASTRA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405345",
+      "nombre": "DISCO PANQUEQUE CHOCOLATE 18 CM ENCOMIENDA TOTTUS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405612",
+      "nombre": "SATIN PURATOS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107354",
+      "nombre": "FRUTILLA CONGELADA ALTA FRUTA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405227",
+      "nombre": "CUPULA 271 BX BUENAVENTURA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405564",
+      "nombre": "PM BASE TARTALETAS MARMIX",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405635",
+      "nombre": "CLAMSHELL 3-3 BAT RECT. ECOPLASTIC",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405593",
+      "nombre": "JUGO EN POLVO ZUKO DURAZNO",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "393253",
+      "nombre": "SUB DISCO HOJA 17 CM",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405685",
+      "nombre": "HUEVO LIQUIDO BOLSA 20 KG AGRICOVIAL",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405638",
+      "nombre": "MANTEQUILLA SIN SAL WATT",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405658",
+      "nombre": "SUB DISCO PANQUEQUE VAINILLA 16 CM",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "362073",
+      "nombre": "DISCO DE HOJA 15 PP 1X30",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405556",
+      "nombre": "RELLENO CHOCOLATE CREAM BAKELS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405594",
+      "nombre": "CUPULA TORTA 15PP OSKUPACK",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "403375",
+      "nombre": "DISCO DE CARTON 15,5CM VTM",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405541",
+      "nombre": "CÍRCULO BLANCO #80 DDM JUMBO 2025",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405582",
+      "nombre": "DISCO MICROCORRUGADO EMPLACADO 15,5 CM DIÁMETRO ASTRA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405696",
+      "nombre": "CAJA PASTELES 600X325X120 ASTRA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "103105",
+      "nombre": "ACEITE VEGETAL 1000 CC. EGC",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405671",
+      "nombre": "ETIQUETA TORTA SAN JORGE LÚCUMA SMU",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405721",
+      "nombre": "ETIQUETA COLOR CREMA 245X40 OPP",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405717",
+      "nombre": "ETIQ. CIRCULAR 90cm IMPR. OPP TORTA SELVA NEGRA WALMART",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405709",
+      "nombre": "ETIQ. CIRCULAR 90cm IMPR. OPP TORTA PIÑA WALMART",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405720",
+      "nombre": "ETIQ. CIRCULAR 80cm IMPR. OPP TORTA CHOCOLATE WALMART",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405714",
+      "nombre": "ETIQ. CIRCULAR 90cm IMPR. OPP TORTA TRES LECHES WALMART",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405713",
+      "nombre": "ETIQ. CIRCULAR 90cm IMPR. OPP TORTA PANQUEQUE NARANJA WALMART",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405718",
+      "nombre": "ETIQ. CIRCULAR 90cm IMPR. OPP KUCHEN FRAMBUESA TRADICIONAL WALMART",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405730",
+      "nombre": "PLACA TORTA VIENA ZUKKER",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107317",
+      "nombre": "CRUMBLE FRAMBUESA CONGELADA ALTA FRUTA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405728",
+      "nombre": "CINTA BICOLOR NARANJA ZUKKER",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405722",
+      "nombre": "ETIQUETA CONSUMO",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405712",
+      "nombre": "ETIQ. CIRCULAR 90cm IMPR. OPP TORTA MIL HOJAS MANJAR ARTESANAL WALMART",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405719",
+      "nombre": "ETIQ. CIRCULAR 80cm IMPR. OPP TORTA FRUTOS DEL BOSQUE WALMART",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405733",
+      "nombre": "ETIQ. CIRCULAR 90cm IMPR. OPP TORTA PIÑA MARKETSIDE",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405734",
+      "nombre": "ETIQ. CIRCULAR 90cm IMPR. OPP TORTA SELVA NEGRA MARKETSIDE",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405736",
+      "nombre": "ETIQ. CIRCULAR 90cm IMPR. OPP TORTA AMOR MARKETSIDE",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405737",
+      "nombre": "ETIQ. CIRCULAR 90cm IMPR. OPP TORTA SAN JORGE MARKETSIDE",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405735",
+      "nombre": "ETIQ. CIRCULAR 90cm IMPR. OPP TORTA VIENA MARKETSIDE",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405738",
+      "nombre": "ETIQUETA CONSUMO MARKETSIDE",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405645",
+      "nombre": "BIZCOCHO # 20 BLANCO C/AMAPOLAS PAVESI",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405711",
+      "nombre": "ETIQ. CIRCULAR 90cm IMPR. OPP TORTA HOJA MANJAR MERENGUE WALMART",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405740",
+      "nombre": "DISCO CARTON BLANCO 19 CM PRAGGA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405739",
+      "nombre": "DISCO CARTON BLANCO 17 CM PRAGGA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405731",
+      "nombre": "ROSA GANACHE ROSADO CLARO AMBROSIA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405732",
+      "nombre": "MOSTACILLA CORAZÓN VALENTÍN AMBROSIA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405710",
+      "nombre": "ETIQ. CIRCULAR 90cm IMPR. OPP TORTA AMOR WALMART",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "430440",
+      "nombre": "PLANCHA PANQUEQUE VAINILLA OBERENA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405741",
+      "nombre": "DISCO CARTON BLANCO 24 CM PRAGGA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "107226",
+      "nombre": "HUEVO LIQUIDO BALDE ARIZONA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405745",
+      "nombre": "MANTEQUILLA SIN SAL ALCA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "403258",
+      "nombre": "CAPSULAS DE PAPEL NUMERO 11 FOOD PACK",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405704",
+      "nombre": "ETIQ. CIRCULAR 90cm IMPR. JUMBO KUCHEN DE MANZANA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405773",
+      "nombre": "ETIQ. CIRCULAR 80cm IMPR. OPP TORTA SAN JORGE SMU",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405771",
+      "nombre": "ETIQUETA 300X57 TORTA HOJA MERENGUE SMU",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405770",
+      "nombre": "CUPULA TORTA 15 PP H112 ALTA COEXPAN",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405700",
+      "nombre": "MARGARINA MULTIPROPÓSITO HORNEO",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "501114",
+      "nombre": "BOLSA COLOR AZUL 100 X 120 X 0,035 SIGNO",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405789",
+      "nombre": "HOJA SEPARADORA TORTA DIAMETRO 230 MMS FULL CARTON",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405793",
+      "nombre": "PLANCHA DE CARTON 1X1,20 FULL CARTON",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405792",
+      "nombre": "CAJA TORTA MEDIANA FULL CARTON",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405772",
+      "nombre": "ETIQUETA 300X57 TORTA SAN JORGE SMU",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405790",
+      "nombre": "CAJA PTG 15PP JUMBO FULL CARTON",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405694",
+      "nombre": "MASA KNAFE SUK",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405791",
+      "nombre": "CAJA PTG 15PP SISA FULL CARTON",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405788",
+      "nombre": "DISCO HOJARASCA 19 CM SEMIELAB. UND",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405817",
+      "nombre": "ETIQ. CIRCULAR 90cm IMPR. SANTA PASTELERÍA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405786",
+      "nombre": "BLISTER 243BBTA DEANDES",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405808",
+      "nombre": "ETIQUETA IMPRESA 150X35 TRES COLORES + U.V OPP POSTRE SABOR TRES LECHES CON FRAMBUESA",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405810",
+      "nombre": "ETIQUETA IMPRESA 150X35 TRES COLORES + U.V OPP POSTRE SABOR LÚCUMA MANJAR",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405809",
+      "nombre": "ETIQUETA IMPRESA 150X35 TRES COLORES + U.V OPP POSTRE SABOR CHOCOLATE Y FRUTOS DEL BOSQUE",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405716",
+      "nombre": "ETIQ. CIRCULAR 90cm IMPR. OPP TORTA SELVA NEGRA TRADICIONAL WALMART",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405832",
+      "nombre": "ETIQ. CIRCULAR 80cm IMPR. OPP TORTA CREMA MANJAR WALMART",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405833",
+      "nombre": "ETIQ. CIRCULAR 80cm IMPR. OPP TORTA CHOCOLATE FRUTILLA WALMART",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405837",
+      "nombre": "ETIQUETA IMPRESA 70X80 CONSUMO TORTA AMBROSITO OPP",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "100106",
+      "nombre": "MIX BROWNIE PURATOS",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405811",
+      "nombre": "PREMEZCLA BIZCOCHO ZANAHORIA ASITEC",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405835",
+      "nombre": "AMBROSITO 30X90 CAROZZI",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405836",
+      "nombre": "ETIQUETA IMPRESA 300X50 CUATRICOMIA + U.V OPP TORTA AMBROSITO",
+      "unidad": "KG",
+      "lote": ""
+    },
+    {
+      "codigo": "405840",
+      "nombre": "ALMENDRAS GRAJEADAS CON BRILLO 1X10 KG CAROZZI",
+      "unidad": "KG",
+      "lote": ""
+    }
+  ]
+}
