@@ -207,7 +207,12 @@ table.rep td.n{text-align:right;font-variant-numeric:tabular-nums;white-space:no
 
   <div id="listaReg"></div>
 
-  <div class="card tight"><div class="dim" id="dbInfo">—</div></div>
+  <div class="card tight" style="background:#1a2a4e;padding:12px 15px;border-left:4px solid #10b981">
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:12px">
+      <div id="dbInfo" style="flex:1;font-size:13px;color:#e0f2fe">—</div>
+      <div id="dbStatus" style="padding:6px 12px;border-radius:4px;font-weight:bold;font-size:11px;background:#10b981;color:#fff">—</div>
+    </div>
+  </div>
 </div>
 
 <!-- ============ SCREEN: REGULARIZACIÓN ABIERTA ============ -->
@@ -1126,14 +1131,7 @@ function construirProds(){
     else if(!m[s].desc && p.desc) m[s].desc=p.desc;
   });
   PRODS = Object.keys(m).sort().map(s=>{ const p=m[s]; p.q=norm(p.sku+' '+p.desc); return p; });
-  actualizarDatalistSKU();
   return PRODS;
-}
-
-function actualizarDatalistSKU(){
-  const datalist=$('skuList');
-  if(!datalist) return;
-  datalist.innerHTML = PRODS.map(p=>'<option value="'+esc(p.sku)+'">'+esc(p.desc||p.sku)+'</option>').join('');
 }
 function buscarProds(q){
   const n=norm(q); if(!n) return [];
@@ -1149,9 +1147,22 @@ function descDeSku(sku){ const s=String(sku||''); const p=PRODS.find(x=>x.sku===
 
 /* ---- carga de un Excel de productos (opcional) ---- */
 const COLS_SKU  = ['articulo','sku','codigoarticulo','codigo','material','codigoproducto','codigosku'];
-const COLS_DESC = ['descripcion','descripciondelarticulo','descripcionarticulo','detalle','nombrearticulo','producto','nombre','descripciondelarticulo','descripciondelservicio'];
+const COLS_DESC = ['descripcion','descripciondelarticulo','descripcionarticulo','detalle','nombrearticulo','producto','nombre','descripciondelservicio'];
 const COLS_ALM  = ['almacen','bodega','deposito'];
 const COLS_PROV = ['razonsocial','proveedor','nombreproveedor','razon'];
+
+function encontrarIndiceColumna(cells, colArray){
+  let idx = cells.findIndex(c=>colArray.indexOf(c)>=0);
+  if(idx>=0) return idx;
+  for(let j=0;j<cells.length;j++){
+    const c=cells[j];
+    for(const col of colArray){
+      if(c.indexOf(col)>=0 || col.indexOf(c)>=0) return j;
+    }
+  }
+  return -1;
+}
+
 function pickFile(){ $('fileInput').click(); }
 function onFile(ev){
   const f=ev.target.files&&ev.target.files[0]; if(!f) return;
@@ -1161,19 +1172,6 @@ function onFile(ev){
   fr.onload=()=>{ try{ parseProductos(fr.result,f.name); }catch(e){ toast('No se pudo leer el archivo'); } };
   fr.onerror=()=>toast('No se pudo leer el archivo');
   fr.readAsArrayBuffer(f);
-}
-function encontrarIndiceColumna(cells, colArray){
-  // Búsqueda exacta primero
-  let idx = cells.findIndex(c=>colArray.indexOf(c)>=0);
-  if(idx>=0) return idx;
-  // Búsqueda parcial si exacta falla
-  for(let j=0;j<cells.length;j++){
-    const c=cells[j];
-    for(const col of colArray){
-      if(c.indexOf(col)>=0 || col.indexOf(c)>=0) return j;
-    }
-  }
-  return -1;
 }
 function parseProductos(buf,fname){
   const wb=XLSX.read(new Uint8Array(buf),{type:'array'});
@@ -1204,7 +1202,9 @@ function parseProductos(buf,fname){
   const items=Object.values(m);
   if(!items.length){ toast('El archivo no trae productos'); return; }
   PRODEX={cargado:new Date().toISOString(), archivo:fname, items};
-  idbSet('kv','prodex',PRODEX).then(()=>{ construirProds(); refreshInfo(); toast(items.length+' producto(s) cargados'); });
+  idbSet('kv','prodex',PRODEX).then(()=>{ construirProds(); refreshInfo(); const fecha = new Date(PRODEX.cargado).toLocaleDateString('es-ES');
+    const hora = new Date(PRODEX.cargado).toLocaleTimeString('es-ES',{hour:'2-digit',minute:'2-digit'});
+    toast(items.length+' producto(s) cargados · '+fecha+' '+hora); });
 }
 
 /* ================================================================
@@ -1263,10 +1263,27 @@ function renderInicio(){
 function refreshInfo(){
   const nOrd = CAT&&CAT.ordenes? Object.keys(CAT.ordenes).length : 0;
   const nPr  = PRODS.length;
-  $('dbInfo').innerHTML =
-    (nPr? (nPr+' producto(s) para buscar'+(nOrd?(' · base de '+nOrd+' OC'):'')) : 'Sin base de productos: cárgala en la app de Recepción de OC o con “Cargar productos”')+
-    ' · v'+APP_VER+'/'+BUILD_ID;
+  const status = $('dbStatus');
+  let info = nPr? (nPr+' producto(s) para buscar'+(nOrd?(' · base de '+nOrd+' OC'):'')) : 'Sin base de productos: cárgala en la app de Recepción de OC o con "Cargar productos"';
+  info += ' · v'+APP_VER+'/'+BUILD_ID;
+  $('dbInfo').innerHTML = info;
+  if(PRODEX && PRODEX.cargado){
+    const fecha = new Date(PRODEX.cargado).toLocaleDateString('es-ES');
+    const hora = new Date(PRODEX.cargado).toLocaleTimeString('es-ES',{hour:'2-digit',minute:'2-digit'});
+    if(status) {
+      status.innerHTML = '✓ Actualizado<br>'+fecha+' '+hora;
+      status.style.background = '#10b981';
+      status.style.color = '#fff';
+    }
+  } else {
+    if(status) {
+      status.innerHTML = '⚠ Sin datos';
+      status.style.background = '#ef4444';
+      status.style.color = '#fff';
+    }
+  }
 }
+
 
 /* ================================================================
    NUEVA / ABRIR REGULARIZACIÓN
@@ -1274,7 +1291,7 @@ function refreshInfo(){
 function nuevaReg(){
   reservarFolio().then(folio=>{
     REG={ id:folio, fecha:hoyISO(), hora:horaAhora(), receptor:'', motivo:MOTIVOS[0],
-          doc:'', prov:'', alm:'', obs:'', lineas:[],
+          doc:'', prov:'', alm:'PV_MATPR', obs:'', lineas:[],
           creado:new Date().toISOString(), mod:new Date().toISOString() };
     REGS.push(REG);
     guardarRegs().then(()=>{ show('reg'); renderReg(); toast('Folio '+folio); });
