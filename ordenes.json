@@ -3,7 +3,7 @@
     {
       "id": "RG00001",
       "fecha": "2026-09-11",
-      "hora": "11:24",
+      "hora": "12:25",
       "receptor": "",
       "motivo": "Producto en bodega sin OC",
       "doc": "",
@@ -11,26 +11,12 @@
       "alm": "",
       "obs": "",
       "lineas": [],
-      "creado": "2026-09-11T14:24:48.582Z",
-      "mod": "2026-09-11T14:24:48.583Z"
-    },
-    {
-      "id": "RG00002",
-      "fecha": "2026-09-15",
-      "hora": "11:34",
-      "receptor": "",
-      "motivo": "Producto en bodega sin OC",
-      "doc": "",
-      "prov": "",
-      "alm": "PV_MATPR",
-      "obs": "",
-      "lineas": [],
-      "creado": "2026-09-15T14:34:29.973Z",
-      "mod": "2026-09-15T14:34:29.973Z"
+      "creado": "2026-09-11T15:25:47.707Z",
+      "mod": "2026-09-11T15:25:47.707Z"
     }
   ],
   "productos": {
-    "cargado": "2026-09-15T14:49:05.245Z",
+    "cargado": "2026-09-15T15:13:23.806Z",
     "archivo": "SKU.xlsx",
     "items": [
       {
@@ -3141,5 +3127,5 @@
     "Reproceso / reetiquetado",
     "Otro"
   ],
-  "fecha_descarga": "2026-09-15T16:05:22.546Z"
+  "fecha_descarga": "2026-09-15T16:19:20.775Z"
 }
