@@ -1241,23 +1241,32 @@ function descargarOrdenes(){
 
 function cargarOrdenesDesdeGitHub(){
   const urlGitHub = 'https://raw.githubusercontent.com/raultramarria-max/OPERACIONES-DE-BODEGA/main/ordenes.json';
-  fetch(urlGitHub)
-    .then(r=>r.json())
+  fetch(urlGitHub, {cache: 'no-cache'})
+    .then(r=>{
+      if(!r.ok) throw new Error('No encontrado');
+      return r.json();
+    })
     .then(data=>{
-      if(data.regularizaciones && data.productos){
-        REGS = data.regularizaciones || [];
+      if(data.regularizaciones !== undefined && data.productos !== undefined){
+        REGS = Array.isArray(data.regularizaciones) ? data.regularizaciones : [];
         PRODEX = data.productos || null;
-        MOTIVOS = data.motivos || MOTIVOS;
-        idbSet('kv','regs',REGS);
-        idbSet('kv','prodex',PRODEX);
-        idbSet('kv','motivos',MOTIVOS);
-        construirProds();
-        renderInicio();
-        refreshInfo();
-        toast('✓ Datos cargados desde GitHub');
+        MOTIVOS = Array.isArray(data.motivos) ? data.motivos : MOTIVOS;
+        Promise.all([
+          idbSet('kv','regs',REGS),
+          idbSet('kv','prodex',PRODEX),
+          idbSet('kv','motivos',MOTIVOS)
+        ]).then(()=>{
+          construirProds();
+          refreshInfo();
+          if(REGS.length > 0 || (PRODEX && PRODEX.items)){
+            toast('✓ Sincronizado desde GitHub');
+          }
+        });
       }
     })
-    .catch(err=>console.warn('No se pudo cargar desde GitHub'));
+    .catch(err=>{
+      console.log('GitHub no disponible o archivo no encontrado');
+    });
 }
 
 function onFileOrdenes(ev){
@@ -1367,6 +1376,8 @@ function goBack(){
   if(SCREEN==='resumen'){ show('reg'); renderReg(); return; }
   if(SCREEN==='reg'){ REG=null; show('inicio'); renderInicio(); return; }
   show('inicio'); renderInicio();
+  // Cargar datos desde GitHub después de 1 segundo
+  setTimeout(()=>cargarOrdenesDesdeGitHub(), 1000);
 }
 
 /* ================================================================
@@ -2022,6 +2033,8 @@ Promise.all([
   return sincronizarMP().then(()=>sincronizarRG());
 }).then(()=>{
   show('inicio'); renderInicio();
+  // Cargar datos desde GitHub después de 1 segundo
+  setTimeout(()=>cargarOrdenesDesdeGitHub(), 1000);
 }).catch(()=>{ construirProds(); show('inicio'); renderInicio(); });
 
 /* service worker: la app queda disponible sin señal */
