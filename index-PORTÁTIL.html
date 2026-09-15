@@ -262,6 +262,7 @@ table.rep td.n{text-align:right;font-variant-numeric:tabular-nums;white-space:no
 </div>
 
 <input type="file" id="fileInput" accept=".xlsx,.xlsm,.xls,.csv" class="hide" onchange="onFile(event)">
+<datalist id="skuList"></datalist>
 <div id="modalHost"></div>
 <div id="toastHost"></div>
 
@@ -1125,7 +1126,14 @@ function construirProds(){
     else if(!m[s].desc && p.desc) m[s].desc=p.desc;
   });
   PRODS = Object.keys(m).sort().map(s=>{ const p=m[s]; p.q=norm(p.sku+' '+p.desc); return p; });
+  actualizarDatalistSKU();
   return PRODS;
+}
+
+function actualizarDatalistSKU(){
+  const datalist=$('skuList');
+  if(!datalist) return;
+  datalist.innerHTML = PRODS.map(p=>'<option value="'+esc(p.sku)+'">'+esc(p.desc||p.sku)+'</option>').join('');
 }
 function buscarProds(q){
   const n=norm(q); if(!n) return [];
@@ -1140,9 +1148,9 @@ function buscarProds(q){
 function descDeSku(sku){ const s=String(sku||''); const p=PRODS.find(x=>x.sku===s); return p? p.desc : ''; }
 
 /* ---- carga de un Excel de productos (opcional) ---- */
-const COLS_SKU  = ['articulo','sku','codigoarticulo','codigo','material','codigoproducto'];
-const COLS_DESC = ['descripcion','descripciondelarticulo','detalle','nombrearticulo','producto','nombre'];
-const COLS_ALM  = ['almacen','bodega'];
+const COLS_SKU  = ['articulo','sku','codigoarticulo','codigo','material','codigoproducto','codigosku'];
+const COLS_DESC = ['descripcion','descripciondelarticulo','descripcionarticulo','detalle','nombrearticulo','producto','nombre','descripciondelarticulo','descripciondelservicio'];
+const COLS_ALM  = ['almacen','bodega','deposito'];
 const COLS_PROV = ['razonsocial','proveedor','nombreproveedor','razon'];
 function pickFile(){ $('fileInput').click(); }
 function onFile(ev){
@@ -1154,6 +1162,19 @@ function onFile(ev){
   fr.onerror=()=>toast('No se pudo leer el archivo');
   fr.readAsArrayBuffer(f);
 }
+function encontrarIndiceColumna(cells, colArray){
+  // Búsqueda exacta primero
+  let idx = cells.findIndex(c=>colArray.indexOf(c)>=0);
+  if(idx>=0) return idx;
+  // Búsqueda parcial si exacta falla
+  for(let j=0;j<cells.length;j++){
+    const c=cells[j];
+    for(const col of colArray){
+      if(c.indexOf(col)>=0 || col.indexOf(c)>=0) return j;
+    }
+  }
+  return -1;
+}
 function parseProductos(buf,fname){
   const wb=XLSX.read(new Uint8Array(buf),{type:'array'});
   let best=null;
@@ -1161,12 +1182,12 @@ function parseProductos(buf,fname){
     const rows=XLSX.utils.sheet_to_json(wb.Sheets[nm],{header:1,defval:'',blankrows:false});
     for(let i=0;i<Math.min(rows.length,15);i++){
       const cells=(rows[i]||[]).map(c=>norm(c));
-      const iSku = cells.findIndex(c=>COLS_SKU.indexOf(c)>=0);
-      const iDes = cells.findIndex(c=>COLS_DESC.indexOf(c)>=0);
+      const iSku = encontrarIndiceColumna(cells, COLS_SKU);
+      const iDes = encontrarIndiceColumna(cells, COLS_DESC);
       if(iSku>=0 && iDes>=0){
         const cand={rows:rows.slice(i+1), iSku, iDes,
-          iAlm:cells.findIndex(c=>COLS_ALM.indexOf(c)>=0),
-          iPrv:cells.findIndex(c=>COLS_PROV.indexOf(c)>=0)};
+          iAlm:encontrarIndiceColumna(cells, COLS_ALM),
+          iPrv:encontrarIndiceColumna(cells, COLS_PROV)};
         if(!best || cand.rows.length>best.rows.length) best=cand;
         break;
       }
@@ -1378,7 +1399,7 @@ function formProd(i){
       '<div id="mProdRes" class="proslist"></div></div>'+
     '<div class="hr"></div>'+
     '<div class="fgrid">'+
-      '<div><label class="f">SKU</label><input type="text" id="mSku" autocapitalize="characters" autocomplete="off" placeholder="Código" value="'+esc(l.sku||'')+'" onchange="onSkuManual()"></div>'+
+      '<div><label class="f">SKU</label><input type="text" id="mSku" list="skuList" autocapitalize="characters" autocomplete="off" placeholder="Código" value="'+esc(l.sku||'')+'" onchange="onSkuManual()"></div>'+
       '<div><label class="f">Lote</label><input type="text" id="mLote" autocapitalize="characters" autocomplete="off" placeholder="LT0000" value="'+esc(l.lote||'')+'"></div>'+
       '<div class="full"><label class="f">Descripción</label><input type="text" id="mDesc" autocomplete="off" placeholder="Nombre del producto" value="'+esc(l.desc||'')+'"></div>'+
       '<div><label class="f">Cantidad</label><input type="number" id="mCant" inputmode="decimal" step="any" value="'+(l.cant!==''&&l.cant!=null?l.cant:'')+'"></div>'+
