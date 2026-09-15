@@ -200,9 +200,9 @@ table.rep td.n{text-align:right;font-variant-numeric:tabular-nums;white-space:no
       <button class="btn sec" onclick="pickFile()">Cargar productos</button>
     </div>
     <div class="btnrow" style="margin-top:8px">
-      <button class="btn sec" style="background:#8b5cf6" onclick="descargarBackup()">💾 Descargar Copia</button>
-      <button class="btn sec" style="background:#06b6d4" onclick="$('fileBackup').click()">📥 Restaurar Copia</button>
-      <input type="file" id="fileBackup" accept=".json" class="hide" onchange="onFileBackup(event)">
+      <button class="btn sec" style="background:#06b6d4" onclick="descargarOrdenes()">📥 Descargar ordenes.json</button>
+      <button class="btn sec" style="background:#8b5cf6" onclick="$('fileOrdenes').click()">⬆️ Cargar ordenes.json</button>
+      <input type="file" id="fileOrdenes" accept=".json" class="hide" onchange="onFileOrdenes(event)">
     </div>
   </div>
 
@@ -1117,6 +1117,43 @@ const UNIDADES = ['','KG','UN','CJ','LT','MT','SC','TON'];
 /* ================================================================
    ÍNDICE DE PRODUCTOS
    ================================================================ */
+
+/* ================================================================
+   CARGAR SKU AUTOMÁTICAMENTE DESDE GITHUB
+   ================================================================ */
+function cargarSKUdesdeGitHub(urlGitHub){
+  fetch(urlGitHub)
+    .then(r=>r.json())
+    .then(data=>{
+      if(data.items && Array.isArray(data.items)){
+        PRODEX = {
+          cargado: new Date().toISOString(),
+          archivo: 'sku-data.json (GitHub)',
+          items: data.items
+        };
+        idbSet('kv','prodex',PRODEX).then(()=>{
+          construirProds();
+          refreshInfo();
+          const fecha = new Date(PRODEX.cargado).toLocaleDateString('es-ES');
+          const hora = new Date(PRODEX.cargado).toLocaleTimeString('es-ES',{hour:'2-digit',minute:'2-digit'});
+          toast('✓ '+data.items.length+' SKU cargados desde GitHub · '+fecha+' '+hora);
+        });
+      } else {
+        toast('⚠ Archivo JSON inválido');
+      }
+    })
+    .catch(err=>{
+      console.warn('No se pudo cargar SKU desde GitHub:', err);
+    });
+}
+
+function cargarSKUAutomaticamente(){
+  if(!PRODEX){
+    const urlGitHub = 'https://raw.githubusercontent.com/TU_USUARIO/regularizacion-quinta/main/sku-data.json';
+    cargarSKUdesdeGitHub(urlGitHub);
+  }
+}
+
 function construirProds(){
   const m={};
   if(CAT && CAT.ordenes){
@@ -1181,47 +1218,79 @@ function onFile(ev){
 /* ================================================================
    DESCARGAR Y RESTAURAR COPIA DE SEGURIDAD
    ================================================================ */
-function descargarBackup(){
-  const backup = {
-    regs: REGS,
-    prodex: PRODEX,
+
+function descargarOrdenes(){
+  const ordenes = {
+    regularizaciones: REGS,
+    productos: PRODEX,
     motivos: MOTIVOS,
-    descargado: new Date().toISOString()
+    fecha_descarga: new Date().toISOString()
   };
-  const json = JSON.stringify(backup, null, 2);
+  const json = JSON.stringify(ordenes, null, 2);
   const blob = new Blob([json], {type:'application/json'});
   const url = URL.createObjectURL(blob);
   const a = document.createElement('a');
   a.href = url;
-  a.download = 'quinta-backup-'+new Date().toISOString().slice(0,10)+'.json';
+  a.download = 'ordenes.json';
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);
   URL.revokeObjectURL(url);
-  toast('Copia descargada');
+  toast('✓ ordenes.json descargado');
 }
 
-function onFileBackup(ev){
+function cargarOrdenesDesdeGitHub(){
+  const urlGitHub = 'https://raw.githubusercontent.com/raultramarria-max/OPERACIONES-DE-BODEGA/main/ordenes.json';
+  fetch(urlGitHub)
+    .then(r=>r.json())
+    .then(data=>{
+      if(data.regularizaciones && data.productos){
+        REGS = data.regularizaciones || [];
+        PRODEX = data.productos || null;
+        MOTIVOS = data.motivos || MOTIVOS;
+        idbSet('kv','regs',REGS);
+        idbSet('kv','prodex',PRODEX);
+        idbSet('kv','motivos',MOTIVOS);
+        construirProds();
+        renderInicio();
+        refreshInfo();
+        toast('✓ Datos cargados desde GitHub');
+      }
+    })
+    .catch(err=>console.warn('No se pudo cargar desde GitHub'));
+}
+
+function onFileOrdenes(ev){
   const f = ev.target.files && ev.target.files[0];
   if(!f) return;
   ev.target.value = '';
-  toast('Leyendo copia de seguridad…');
+  toast('Leyendo ordenes.json…');
   const fr = new FileReader();
   fr.onload = ()=>{
     try{
-      const backup = JSON.parse(fr.result);
-      if(!backup.regs || !backup.prodex){
-        toast('Archivo de copia inválido');
-        return;
+      const data = JSON.parse(fr.result);
+      if(data.regularizaciones && data.productos){
+        REGS = data.regularizaciones || [];
+        PRODEX = data.productos || null;
+        MOTIVOS = data.motivos || MOTIVOS;
+        idbSet('kv','regs',REGS);
+        idbSet('kv','prodex',PRODEX);
+        idbSet('kv','motivos',MOTIVOS);
+        construirProds();
+        renderInicio();
+        refreshInfo();
+        toast('✓ Datos restaurados desde ordenes.json');
+      } else {
+        toast('⚠ Archivo inválido');
       }
-      restaurarBackup(backup);
     }catch(e){
-      toast('Error al leer la copia: '+e.message);
+      toast('Error: '+e.message);
     }
   };
-  fr.onerror = ()=>toast('No se pudo leer el archivo');
+  fr.onerror = ()=>toast('Error al leer archivo');
   fr.readAsText(f);
 }
+
 
 function restaurarBackup(backup){
   Promise.all([
@@ -1959,7 +2028,8 @@ Promise.all([
 /* COMENTADO: Solo se carga si sw.js existe en la carpeta */
 /*
 if('serviceWorker' in navigator && location.protocol!=='file:'){
-  window.addEventListener('load', ()=>{
+  cargarSKUAutomaticamente();
+window.addEventListener('load', ()=>{
     const habiaSW = !!navigator.serviceWorker.controller;
     let recargando = false;
     navigator.serviceWorker.addEventListener('controllerchange', ()=>{
