@@ -199,6 +199,11 @@ table.rep td.n{text-align:right;font-variant-numeric:tabular-nums;white-space:no
       <button class="btn sec" onclick="showReporte()">Reporte y Excel</button>
       <button class="btn sec" onclick="pickFile()">Cargar productos</button>
     </div>
+    <div class="btnrow" style="margin-top:8px">
+      <button class="btn sec" style="background:#8b5cf6" onclick="descargarBackup()">💾 Descargar Copia</button>
+      <button class="btn sec" style="background:#06b6d4" onclick="$('fileBackup').click()">📥 Restaurar Copia</button>
+      <input type="file" id="fileBackup" accept=".json" class="hide" onchange="onFileBackup(event)">
+    </div>
   </div>
 
   <div class="card tight">
@@ -1173,6 +1178,70 @@ function onFile(ev){
   fr.onerror=()=>toast('No se pudo leer el archivo');
   fr.readAsArrayBuffer(f);
 }
+/* ================================================================
+   DESCARGAR Y RESTAURAR COPIA DE SEGURIDAD
+   ================================================================ */
+function descargarBackup(){
+  const backup = {
+    regs: REGS,
+    prodex: PRODEX,
+    motivos: MOTIVOS,
+    descargado: new Date().toISOString()
+  };
+  const json = JSON.stringify(backup, null, 2);
+  const blob = new Blob([json], {type:'application/json'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'quinta-backup-'+new Date().toISOString().slice(0,10)+'.json';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+  toast('Copia descargada');
+}
+
+function onFileBackup(ev){
+  const f = ev.target.files && ev.target.files[0];
+  if(!f) return;
+  ev.target.value = '';
+  toast('Leyendo copia de seguridad…');
+  const fr = new FileReader();
+  fr.onload = ()=>{
+    try{
+      const backup = JSON.parse(fr.result);
+      if(!backup.regs || !backup.prodex){
+        toast('Archivo de copia inválido');
+        return;
+      }
+      restaurarBackup(backup);
+    }catch(e){
+      toast('Error al leer la copia: '+e.message);
+    }
+  };
+  fr.onerror = ()=>toast('No se pudo leer el archivo');
+  fr.readAsText(f);
+}
+
+function restaurarBackup(backup){
+  Promise.all([
+    idbSet('kv','regs',backup.regs||[]),
+    idbSet('kv','prodex',backup.prodex||null),
+    idbSet('kv','motivos',backup.motivos||MOTIVOS)
+  ]).then(()=>{
+    REGS = backup.regs||[];
+    PRODEX = backup.prodex||null;
+    MOTIVOS = backup.motivos||MOTIVOS;
+    construirProds();
+    renderInicio();
+    refreshInfo();
+    toast('✓ Copia restaurada: '+REGS.length+' regularizaciones');
+  }).catch(()=>{
+    toast('Error al restaurar la copia');
+  });
+}
+
+
 function parseProductos(buf,fname){
   const wb=XLSX.read(new Uint8Array(buf),{type:'array'});
   let best=null;
